@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup as Soup
 from selenium import webdriver
 import datetime
 import csv
-
+from os.path import join as pjoin
 
 
 def main():
@@ -29,9 +29,10 @@ def main():
     depart_time = soup2.findAll("span",{"data-test-id":"departure-time"})
     arrival_time = soup2.findAll("span",{"data-test-id":"arrival-time"})
     
-    
-    file = "expediadata-"+tom_day+"-"+tom_month+".csv"
-    f = open(file,"w")
+ 
+    filename = "expediadata-"+tom_day+"-"+tom_month+".csv"
+    path_to_file = pjoin("/home/joncauchi/Assignment/Part 1/data/", filename)
+    f = open(path_to_file,"w")
     writer = csv.writer(f)
     writer.writerow(["Date","Airline", "Price", "DepartTime", "ArrivalTime"])
     
