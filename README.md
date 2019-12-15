@@ -3,5 +3,6 @@ Collection of around 6 weeks of flight information from Expedia regarding a dire
 Prequisites:
 - Python 3
 - BeautifulSoup
+- Cron Scheduler
 - Selenium
 - ChromeDriver/GeckoDriver (Depends on the broswer)
