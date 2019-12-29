@@ -6,4 +6,3 @@ Used:
 - Cron Scheduler
 - Selenium
 - ChromeDriver/GeckoDriver (Depends on the broswer)
--
