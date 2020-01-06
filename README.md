@@ -3,6 +3,6 @@ Collection of around 6 weeks of flight information from Expedia regarding a dire
 Used:
 - Python 3
 - BeautifulSoup
-- Cron Scheduler
+- Crontab
 - Selenium
 - ChromeDriver/GeckoDriver (Depends on the broswer)
